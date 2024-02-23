@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import './App.css';
 
 function App() {
-  const [countries,setCountries] = useState();
+  const [countries,setCountries] = useState([]);
   useEffect(()=>{
     fetch("https://restcountries.com/v3.1/all")
     .then((response)=> response.json())
